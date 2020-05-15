@@ -108,6 +108,11 @@ body {
   font-size: 2rem;
   color: grey;
 }
+@media (max-width: 500px) {
+  .nav a {
+    font-size: 0.6rem;
+  }
+}
 .nav a:not(:last-child):after {
   content: "|";
 }
@@ -131,6 +136,18 @@ body {
   padding: 0.5%;
   border-radius: 5%;
 }
+@media (max-width: 500px) {
+  .title-container button {
+    background-color: white;
+    color: gray;
+    font-size: 0.6rem;
+    width: 100px;
+    padding: 0.5%;
+    border-radius: 5%;
+    top: 60%;
+    left: 20%;
+  }
+}
 .title-container h1 {
   position: absolute;
   left: 23%;
@@ -138,17 +155,33 @@ body {
   font-size: 3rem;
   color: white;
 }
+@media (max-width: 500px) {
+  .title-container h1 {
+    font-size: 1rem;
+  }
+}
 .artists-container {
   display: flex;
   margin: 0% 20%;
+  flex-wrap: wrap;
 }
 .artist {
   flex-direction: column;
   margin: 2%;
   flex-wrap: wrap;
 }
+@media (max-width: 500px) {
+  .artist {
+    flex-direction: row;
+  }
+}
 .artist img {
   width: 400px;
+}
+@media (max-width: 500px) {
+  .artist img {
+    width: 250px;
+  }
 }
 .artist .bio {
   width: 60%;
