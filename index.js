@@ -247,12 +247,14 @@ console.log(artists[8]);
  * it will remove Amedeo Modigliani from our dataset.
 */
   
-  function removeArtist(artists, id) {
-    delete artists[id];
+  const newArtists = [...artists];
+
+  function removeArtist(newArtists, id) {
+    delete newArtists[id];
   }
   
-  console.log(removeArtist(artists, 0));
-  console.log(artists); 
+  console.log(removeArtist(newArtists, 0));
+  console.log(newArtists); 
   // I added the above to check this worked
   
   /**
@@ -260,19 +262,21 @@ console.log(artists[8]);
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt (artists){
+const newArtists2 = [...artists];
+
+function lotsOfArt (newArtists2){
   
     let lotsPainted = [];
   
-    for(let i = 0; i < artists.length; i++){
-      if (artists[i] > 100)
-      {lotsPainted.push(artists[i]);
+    for(let i = 0; i < (newArtists2.length); i++){
+      if (newArtists2[i].paintings > 100)
+      {lotsPainted.push(newArtists2[i]);
       }
     }
      return lotsPainted
   }
   
-  console.log(lotsOfArt(artists));
+  console.log(lotsOfArt(newArtists2));
 
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
@@ -295,13 +299,24 @@ function addArtist(){
 
 // 🎨🎨 STRETCH 🎨🎨//
 
-/* STRETCH 1: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
+/* STRETCH 1: Create a function called get20s() that takes artists as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
 
-function get20s(/* Code here */){
 
-    /* Code here */
+const get20sData = [...artists];
 
+function get20s (get20sData){
+  
+    let artists20 = [];
+  
+    for(let i = 0; i < (get20sData.length); i++){
+      if (get20sData[i].years >= 1800)
+      {artists20.push(get20sData[i]);
+      }
+    }
+     return artists20
   }
+  
+  console.log(get20s(get20sData));
 
 /* STRETCH 2: Programtically console.log HTML element structure 
 
