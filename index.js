@@ -355,3 +355,18 @@ function randomize(/* Code here */){
 
 
  /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
+
+
+ window.onscroll = function() {myFunction()};
+
+ var navbar = document.getElementById("navbar");
+
+ var sticky = navbar.offsetTop;
+
+ function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}

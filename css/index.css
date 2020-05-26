@@ -96,13 +96,14 @@ body {
   justify-items: center;
 }
 .header .nav {
-  margin: 1.5% 0 0 0;
+  margin: 1% 0 0 0;
 }
 .header .nav a {
   text-decoration: none;
   font-size: 2rem;
+  font-family: 'Varela', sans-serif;
   margin: 2%;
-  color: grey;
+  color: black;
   align-content: center;
 }
 @media (max-width: 500px) {
@@ -111,15 +112,43 @@ body {
   }
 }
 .header .nav a:hover {
-  color: black;
-}
-.header a:not(:last-child):after {
-  content: "|";
-  position: relative;
-  right: -2%;
+  color: grey;
 }
 .navParent {
   text-align: center;
+}
+#navbar {
+  overflow: hidden;
+  background-color: white;
+  padding: 1%;
+}
+#navbar a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 2%;
+  color: black;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  #navbar a {
+    font-size: 1.3rem;
+  }
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black !important;
+  opacity: 0.85;
+}
+.sticky a {
+  color: white !important;
+}
+.sticky + .content {
+  padding-top: 60px;
 }
 .title-container {
   display: flex;
@@ -132,7 +161,7 @@ body {
   height: 65vh;
   width: 70%;
   margin: 1.5% 15%;
-  background-image: url("/assets/home.png");
+  background-image: url(/assets/Essentialism.png);
   background-position: center;
 }
 @media (max-width: 500px) {
@@ -144,19 +173,21 @@ body {
   height: auto;
   margin: 2%;
   font-size: 1.5rem;
+  font-family: 'Varela', sans-serif;
   border-radius: 5%;
   padding: 1.5%;
   background-color: white;
-  color: grey;
+  color: black;
 }
 .title-container .hero button:hover {
-  background-color: grey;
+  background-color: black;
   color: white;
 }
 .title-container .hero h1 {
   text-align: center;
   font-size: 4rem;
-  color: white;
+  color: black;
+  font-family: 'Varela', sans-serif;
 }
 @media (max-width: 500px) {
   .title-container .hero h1 {
