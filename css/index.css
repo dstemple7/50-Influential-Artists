@@ -150,6 +150,54 @@ body {
 .sticky + .content {
   padding-top: 60px;
 }
+.footer {
+  justify-items: center;
+}
+.footer .ul {
+  margin: 0 0 0 0;
+}
+.footer .ul div {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: 'Varela', sans-serif;
+  margin: 2%;
+  color: black;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .footer .ul div {
+    font-size: 1.3rem;
+  }
+}
+.footer .ul div:hover {
+  color: grey;
+}
+.footerParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: black;
+}
+.footerUL {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+.footerUL div {
+  flex-wrap: none;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 2%;
+  color: white;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .footerUL div {
+    font-size: 1rem;
+  }
+}
 .title-container {
   display: flex;
 }
@@ -206,8 +254,8 @@ body {
   }
 }
 .artists-container img {
-  width: 38rem;
-  margin: 2% 5%;
+  width: 15rem;
+  margin: 2% 30%;
   border-radius: 3%;
 }
 @media (max-width: 500px) {
